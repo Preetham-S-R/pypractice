@@ -125,4 +125,29 @@
 #         count += 1
 # print(count)
 
-# 16. wap
+# 16. wap to count the no of special characters in a string
+
+s = 'abc dAbCD12334!@#$%^&**(<>?:'
+
+count_spl = 0
+count_cap = 0
+count_sml = 0
+count_dig = 0
+
+for ele in s:
+    if 'a' <= ele <= 'z':
+        count_sml += 1
+    elif 'A' <= ele <= 'Z':
+        count_cap += 1
+    elif '0' <= ele <= '9':
+        count_dig += 1
+
+    else:
+        count_spl += 1
+
+print('capital letters --> ',count_cap)
+print('small letters --> ',count_sml)
+print('numbers --> ',count_dig)
+print('special characters --> ',count_spl)
+
+
