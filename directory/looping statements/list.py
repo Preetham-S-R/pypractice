@@ -16,16 +16,18 @@
 #
 # for ele in range(len(l)):
 #     print(ele, l[ele],sep=" --> ")
-#
+# for i in range(len(l)):
+#     print(i, l[i])
+
 # for ele1, ele2 in enumerate(l):
 #     print(ele1, ele2, sep=">>>>")
 
 # 3. wap to print elements in the list in reversed order
 
-# l = ['p2',2,'me2','sh2','li2','ki2', 'si2','pu2','a2','ci2','fa2']
+#l = ['p2','2','me2','sh2','li2','34567', 'si2','pu2','a2','ci2','fa2']
 #
-# for i in l[::-1]:
-#     print(i, end="  ")
+# for i in reversed(l):
+#    print(i, end="  ")
 #
 # print()
 # for i1 in range(len(l)-1,-1,-1):
@@ -37,7 +39,7 @@
 
 # 4. wap to print alternate elements in a list
 
-# l = ['p2',2,'me2','sh2','li2','ki2', 'si2','pu2','a2','ci2','fa2','piku','kiku','beku']
+#l = ['p2',2,'me2','sh2','li2','ki2', 'si2','pu2','a2','ci2','fa2','piku','kiku','beku']
 # #
 # # using slicing
 #
@@ -94,11 +96,11 @@
 # 7. wap to print the strings which are of even length
 
 # l = ['p2',2,'me2','sh2','li2','ki2', 'si2','pu2','a2','ci2','fa2','piku','kiku','beku',1,2,3,4,5,555,4.0,45.0,0j, 1+5j, 24+15j, True, False, 2.5]
-#
-# # for i in l:
-# #     if isinstance(i, str) and len(i) % 2 == 0:
-# #         print(i, end="  ")
-# # print()
+# #
+# for i in l:
+#     if isinstance(i, str) and len(i) % 2 == 0:
+#         print(i, end="  ")
+# print()
 #
 # l1 = []
 # for i in l:
@@ -128,7 +130,7 @@
 # 9. wap to reverse the elements in the list if elements is of type string ,else keep it as it is
 
 # l = ['p2',2,'me2','sh2','li2','ki2', 'si2','pu2','a2','ci2','fa2','piku','kiku','beku',1,2,3,4,5,555,4.0,45.0,0j, 1+5j, 24+15j, True, False, 2.5]
-#
+# #
 # l1_str = []
 # l2_rest = []
 #
@@ -136,7 +138,7 @@
 #     if isinstance(i, str):
 #         l1_str.append(i[::-1])
 #     else:
-#         l2_rest.append(i)
+#         l2_rest.append(i))
 #
 # print('reversed string in list --->', l1_str)
 # print('rest of the elements in list --> ',l2_rest)
@@ -154,13 +156,13 @@
 # ext = ['youtube.txt','amazon.pdf','apple.xls','flipkart.in']
 #
 # for i in ext :
-#     l = i.split('.')
-#     print(l[1], end="   ")
-#
+#     l,b = i.split('.')
+#     print(b, end="   ")
+# #
 # 12. wap to print the file name if the file name is of odd length
 
 # ext = ['youtube.txt', 'amazon.pdf', 'apple.xls', 'flipkart.in']
-
+#
 # for i in ext:
 #     a,b = i.split('.')
 #
@@ -248,4 +250,60 @@
 #     if i == i[::-1]:
 #         print(i)
 
-# 19. wap to
+# 19. wap to rotate items of the list
+# items = ['apple', 1.2, 'google', '12.6',26,'100']
+# k = 2
+# item = []
+#
+# for i in range(k):
+#     *n, n1 = items
+#     item = n1, *n
+#     items = item
+# print(item)
+# #
+# for i in items:
+#     *n, n = items
+#     item = n, *n
+#     items = item
+# print(item)
+
+
+# # from collections import deque
+# i = ['apple', 1.2, 'google', '12.6',26,'100']
+# l = deque(i)
+# l.rotate(2)
+# print(list(l))
+
+# print sum of entire list and sum of only internals
+# l = [[1,2,3],[4,5,6],[7,8,9]]
+# #
+# sum_int = 0
+# sum_total = 0
+#
+# for i in l:
+#     sum_int = 0
+#     for j in range(len(i)):
+#         sum_int = sum_int + i[j]
+#     print(sum_int)
+#     sum_total += sum_int
+# print(sum_total)
+
+#
+
+# for item in l:
+#     sum_int = 0
+#     for i in item:
+#         sum_total += i
+#         sum_int += i
+#     print(sum_int)
+# print(sum_total)
+
+# rotate list based on k value
+
+# l = ['apple',1.2,'google','12.6',26,'100']
+# k = 2
+# for i in range(k):
+#     item = l.pop()
+#     l = [item] + l
+#     # l.insert(0, item)
+# print(l)

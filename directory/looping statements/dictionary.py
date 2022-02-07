@@ -59,7 +59,7 @@
 # for items in enumerate(d.items()):
 #     print(items, end="  ")
 # print()
-#
+
 # # deep unpacking
 #
 # for item1, (key, value) in enumerate(d.items()):
@@ -282,4 +282,103 @@ is ont possible
 #     d2[val] = item
 # print(d2)
 
+# wap to print a tuple of character and its ascii value
 
+# s = "budwiser"
+#
+# for i in s:
+#     print((i, ord(i)), end="    ")
+#
+
+# wap to check wheather the given number is prime or not
+
+# n = int(input('enter a number : '))
+#
+# for i in range(2,n):
+#     if n % i == 0:
+#         print(n,'not a prime number')
+# else:
+#     print(n,'is prime')
+#
+# wap to print the sum of all the digits present in the string
+
+# s = 'abcd123456789'
+# sum = 0
+# for i in s:
+#     if i.isdigit():
+#         sum += int(i)
+# print(sum)
+
+# wap to print all the consonenets present in a string
+''' apart from vowels, space , digits and special characters are called consonents'''
+
+# s = 'tume jo mene deka,12345!!!@##$$$#%#%^&*&'
+# con = ''
+#
+# for i in s:
+#     if 'a' <= i <= 'z' or 'A' <= i <= 'Z' or '0' <= i <= '9':
+#         pass
+#     else:
+#         con += i
+#         print(i, end="   ")
+# print()
+# print(con)
+
+# wap to print a tuple of index and character in the string
+
+# s = "tu jo mila to"
+#
+# for item in enumerate(s):
+#     print(item, end="   ")
+# print()
+#
+# for i in range(len(s)):
+#     print((i, s[i]), end="   ")
+#
+# wap to reverse a string using three ways
+
+# s = 'Anisutide yako indu, neene ne nanavalendu'
+# s1 = ""
+# for i in s:
+#     s1 = i + s1
+# print(s1)
+#
+# s2 = ""
+# for i1 in s[::-1]:
+#     s2 += i1
+# print(s2)
+#
+# s3 = ""
+# for i2 in reversed(s):
+#     s3 += i2
+# print(s3)
+#
+# s4 = ""
+# for i3 in range(-1,-len(s)-1,-1):
+#     s4 += s[i3]
+# print(s4)
+
+# wap to extract only special chatacters from a string
+
+# s = 'tume jo mene deka,12345!!!@##$$$#%#%^&*&'
+# con = []
+#
+# for i in s:
+#     if 'a' <= i <= 'z' or 'A' <= i <= 'Z' or '0' <= i <= '9':
+#         pass
+#     else:
+#         con += i
+#         print(i, end="   ")
+# print()
+# print(con)
+
+# wap to check if the given character is present in the string , if it is present return its index
+
+# s = 'tume jo mene deka,12345!!!@##$$$#%#%^&*&'
+# ch = input('enter a character : ')
+#
+# for i in range(len(s)):
+#     if len(ch) == 1 and s[i] == ch:
+#         print([ch,'index', i], end=" ")
+
+# wap to

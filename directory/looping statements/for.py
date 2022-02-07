@@ -82,7 +82,7 @@
 # #     print(s[item], end='  ')
 # #
 # # for char in s[::-1]:
-# #     print(char, end='  ' )
+# #     print(char, end='  ')
 #
 # for item in reversed(s):
 #     print(item, end='  ')
@@ -95,7 +95,7 @@
 #     count += 1
 # print(count)
 
-# 13. wap to print even indexed charcters in the string
+# 13. wap to print even indexed characters in the string
 
 # s = 'preetham'
 #
@@ -145,9 +145,9 @@ for ele in s:
     else:
         count_spl += 1
 
-print('capital letters --> ',count_cap)
-print('small letters --> ',count_sml)
-print('numbers --> ',count_dig)
-print('special characters --> ',count_spl)
+print('capital letters --> ', count_cap)
+print('small letters --> ', count_sml)
+print('numbers --> ', count_dig)
+print('special characters --> ', count_spl)
 
 
