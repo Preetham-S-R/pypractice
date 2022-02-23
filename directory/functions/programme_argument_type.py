@@ -121,8 +121,7 @@
 #     l.append(a)
 #     return l
 #
-#
-# print(fibo2(10)
+# print(fibo2(10))
 
 
 ''' variable positional arguments '''
@@ -141,8 +140,8 @@
     #     if isinstance(i,(int, float)):
     #         total += i
     # return total
-    #
-    #
+
+
 # print(sum_(1,2,3,1.2,4.5,3.8,0.5))
 
 
@@ -185,7 +184,7 @@
 # print(rev('apple','ball','call','small', None, True))
 
 
-''' variable keyword aruments '''
+''' variable keyword arguments '''
 
 ''' waf to that returns no of positional args and no of keyword args '''
 
@@ -199,14 +198,14 @@
 """ no of args are greater than 5 or not"""
 
 
-def great5(*args):
-    if len(args) > 5:
-        return 'args no greater than 5'
-
-    return 'args less than 5'
-
-
-print(great5(0,1,2,3,3,1,32,4,581,6,10,5,85,2,2))
-
-
-print(great5(1,2))
+# def great5(*args):
+#     if len(args) > 5:
+#         return 'args no greater than 5'
+#
+#     return 'args less than 5'
+#
+#
+# print(great5(0,1,2,3,3,1,32,4,581,6,10,5,85,2,2))
+#
+#
+# print(great5(1,2))

@@ -101,7 +101,7 @@
 #         d[ch] += 1
 # print(d)
 
-'''   we cant initialization and updation cannot be done simultaneously i.e
+'''   we can't initialize and update be done simultaneously i.e
 for i in s:
     d[ch] += 1
 is ont possible

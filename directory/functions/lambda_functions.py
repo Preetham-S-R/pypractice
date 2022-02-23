@@ -60,24 +60,60 @@ print(list(map(vow, l2)))
 
 l = ['apple', 'eat', 'day', 'every','says', 'doctor']
 
-l2 = [i.upper() if isinstance(i, str) else i for i in l]
-print(l2)
+
+# upper = lambda stri: stri.upper() if isinstance(stri, str) else stri
+# print(list(map(upper, l)))
+
+res = map(str.upper, l)
+print(list(res))
 
 ''' wap to convert all the negative numbers in the list to positive map '''
 
+l = [1,-2,-3,4,-5,-6,7,-8,9,-10]
+
+# posi = lambda inti: abs(inti) if inti < 0 else inti
+# print(list(map(posi, l)))
+
+res = map(abs, l)
+print(list(res))
 
 ''' wap that returns the list of numbers raised to the power of their indices using map '''
 
+l = [1,-2,-3,4,-5,-6,7,-8,9,-10]
+
+power = lambda pow: pow ** l.index(pow)
+print(list(map(power, l)))
+
+
 ''' wap that returns all the words in lower case in the give n sentence '''
 
+l = ['APPLE', 'EAT', 'DAY', 'EVERY', 'SAYS', 'DOCTOR']
 
+lower = lambda low: low.lower() if isinstance(low,str) else low
+print(list(map(lower, l)))
 
+''' wap to get list of lengths of each word '''
 
+s = 'Hello is it me you lookin for ?'
 
+res = map(len, s.split())
+print(list(res))
 
+'''wap to get list of tuples of char and asci '''
 
+s = 'tuje soch ta hu me shaam ho subbha'
 
+asci = lambda i: (i,ord(i))
+print(list(map(asci, s)))
 
+''' wap to add teh following list elements simultaneously '''
+
+a = [1,2,3,4]
+b = [5,6,7,8]
+
+add = lambda a1, b1: a1 + b1
+
+print(list(map(add,a,b)))
 
 
 

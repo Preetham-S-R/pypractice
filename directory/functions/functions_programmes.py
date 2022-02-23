@@ -1,4 +1,4 @@
-''' wap to print "hai everyone" if on arguments is given by the user '''
+''' wap to print`   1 "hai everyone" if on arguments is given by the user '''
 
 
 # def input_(a='Hai everyone'):
@@ -76,7 +76,7 @@
 
 ''' assignment for loop -strings'''
 
-print(per_sq_rng(500))
+# print(per_sq_rng(500))
 
 
 ''' waf to return the below output
@@ -118,7 +118,7 @@ func("TRACXN", 1) >>> TAX
 
 
 ''' waf to that takes variable no of inputs and returns length of all the iterables given '''
-
+#
 # a = [1,2,3,4,5,6,7,8,9]
 # s = 'euphoria'
 # t = ('dinga', 'dingi', 'manga')

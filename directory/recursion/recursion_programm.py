@@ -91,20 +91,24 @@
 ''' wap to reverse a string '''
 
 
-def rev_str(s, i=0, s1=''):
-    if len(s) > i:
-        s1 = s[i] + s1
-        return rev_str(s, i+1, s1)
-    return s1
-
-print(rev_str('hello'))
+# def rev_str(s, i=0, s1=''):
+#     if len(s) > i:
+#         s1 = s[i] + s1
+#         return rev_str(s, i+1, s1)
+#     return s1
+#
+# print(rev_str('hello'))
 
 ''' warp to print fibonacci series upto n but less than 1000 '''
 
 
-def fibo(upto,a=0,b=1,c=0,):
-    if upto > a:
+def fibo(upto, a=0, b=1, c=0):
+    if a < upto:
         c = a + b
         b = c
         a = b
-        return fibo(upto,a,)
+        print(a)
+        return fibo(upto, a, b, c)
+    return
+
+print(fibo(1000))
