@@ -7,13 +7,18 @@ class count:
         self.count = 0
 
     def __call__(self, *args, **kwargs):
-        self.count += 1
-        return self.func(*args, **kwargs)
+        a = self.func(*args, **kwargs)
+        for i in a:
+            self.count += 1
+        return self.count
+
 
 
 @ count
 def length(collection):
-    return len(collection)
+    return collection
 
 
 print(length([1,2,3,4,5,6,7,8,9,10]))
+
+
